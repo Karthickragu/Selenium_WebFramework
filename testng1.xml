@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="methods">
+
+	<listeners>
+		<listener class-name="com.radio.listener.TestListener" />
+	</listeners>
+
+
+	<test thread-count="5" name="Test_Firefox" parallel="methods">
+		<parameter name="preferredBrowser" value="firefox" />
+		<parameter name="platformVersion" value="" />
+		<classes>
+			<class name="com.radio.test.Regression" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test_Edge" parallel="methods">
+		<parameter name="preferredBrowser" value="edge" />
+		<parameter name="platformVersion" value="" />
+		<classes>
+			<class name="com.radio.test.Regression" />
+		</classes>
+	</test> 
+	
+	
+	<test thread-count="5" name="Test_Chrome" parallel="methods">
+		<parameter name="preferredBrowser" value="chrome" />
+		<parameter name="platformVersion" value="" />
+		<classes>
+			<class name="com.radio.test.Regression" />
+		</classes>
+	</test>
+	
+	</suite> <!-- Suite -->
+
+
+	

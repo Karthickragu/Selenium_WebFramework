@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.wellsfargo.listener.TestListener"/>
+  </listeners>
+  <test thread-count="2" name="Test_Firefox(failed)" parallel="methods">
+    <parameter name="platformVersion" value=""/>
+    <parameter name="preferredBrowser" value="firefox"/>
+    <classes>
+      <class name="com.wellsfargo.test.Regression">
+        <methods>
+          <include name="setUp_Test"/>
+          <include name="end_TestSuite"/>
+          <include name="start_TestSuite"/>
+          <include name="test1"/>
+          <include name="test10"/>
+          <include name="start_Test"/>
+          <include name="testa1"/>
+          <include name="test6"/>
+          <include name="test9"/>
+          <include name="test4"/>
+          <include name="set_Prerequisite"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="finish_Test"/>
+          <include name="end_Testcase"/>
+        </methods>
+      </class> <!-- com.wellsfargo.test.Regression -->
+    </classes>
+  </test> <!-- Test_Firefox(failed) -->
+  <test thread-count="2" name="Test_Edge(failed)" parallel="methods">
+    <parameter name="platformVersion" value=""/>
+    <parameter name="preferredBrowser" value="edge"/>
+    <classes>
+      <class name="com.wellsfargo.test.Regression">
+        <methods>
+          <include name="setUp_Test"/>
+          <include name="end_TestSuite"/>
+          <include name="start_TestSuite"/>
+          <include name="test1"/>
+          <include name="test10"/>
+          <include name="start_Test"/>
+          <include name="testa1"/>
+          <include name="test6"/>
+          <include name="test9"/>
+          <include name="test4"/>
+          <include name="set_Prerequisite"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="finish_Test"/>
+          <include name="end_Testcase"/>
+        </methods>
+      </class> <!-- com.wellsfargo.test.Regression -->
+    </classes>
+  </test> <!-- Test_Edge(failed) -->
+  <test thread-count="2" name="Test_Chrome(failed)" parallel="methods">
+    <parameter name="platformVersion" value=""/>
+    <parameter name="preferredBrowser" value="chrome"/>
+    <classes>
+      <class name="com.wellsfargo.test.Regression">
+        <methods>
+          <include name="setUp_Test"/>
+          <include name="end_TestSuite"/>
+          <include name="start_TestSuite"/>
+          <include name="test1"/>
+          <include name="test10"/>
+          <include name="start_Test"/>
+          <include name="testa1"/>
+          <include name="test6"/>
+          <include name="test9"/>
+          <include name="test4"/>
+          <include name="set_Prerequisite"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="finish_Test"/>
+          <include name="end_Testcase"/>
+        </methods>
+      </class> <!-- com.wellsfargo.test.Regression -->
+    </classes>
+  </test> <!-- Test_Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
